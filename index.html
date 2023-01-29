@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>bugungi rejangiz</title>
+  </head>
+  <body>
+    <section class="plan">
+      <div class="container">
+        <div class="plan__wrapper">
+          <h1 class="plan__title">Bugungi rejangizni kiriting</h1>
+          <form action="" class="plan__form" id="form">
+            <input
+              type="text"
+              class="plan__input"
+              placeholder="bugungi rejangiz"
+              required
+            />
+              <button type="submit" class="plan__btn">Rejani Qo'shish</button>
+          </form>
+          <ul class="plan-list">
+            <li class="plan-list__item">
+              <div class="plan-list__block">
+                <h3 class="plan-list__text">Kitob O'qish</h3>
+                <p class="plan-list__subtext">
+                  12.12.1212 23:59 <i class="bx bx-calendar-plus"></i>
+                </p>
+              </div>
+              <div class="plan-list__box">
+                <button class="plan-list__btn" id="add-btn">Bajarildi</button>
+                <button class="plan-list__btn" id="delete-btn">
+                  O'chirish
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
