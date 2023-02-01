@@ -148,6 +148,7 @@ userlist.addEventListener("click", (event) => {
       document.querySelector(".plan-list__subtext").textContent =
         "date kiriting";
     }
+    
     if (elInput.value === "") {
       document.querySelector(".plan-list__text").textContent = "Nom kiriting";
     }
