@@ -129,6 +129,7 @@ userlist.addEventListener("click", (event) => {
       const arr = array[i];
       if (arr.id === id) {
         array[i].title = elInput.value;
+        array[i].date = elDate.value;
       }
     }
     if (elInput.value == "") {
@@ -136,7 +137,7 @@ userlist.addEventListener("click", (event) => {
       elInput.classList += " red";
     }
     elInput.addEventListener("input", () => {
-      if (elInput.value != "") {
+      if (elInput.value == "") {
         elInput.placeholder = "bugungi rejangiz";
         elInput.classList = "plan__input";
       }
