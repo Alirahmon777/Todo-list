@@ -143,6 +143,14 @@ userlist.addEventListener("click", (event) => {
       }
     });
     renderPlan(array);
+    if (elDate.value === "") {
+      document.querySelector(".plan-list__subtext").style.color = "red";
+      document.querySelector(".plan-list__subtext").textContent =
+        "date kiriting";
+    }
+    if (elInput.value === "") {
+      document.querySelector(".plan-list__text").textContent = "Nom kiriting";
+    }
+    elForm.reset();
   }
-  elForm.reset();
 });
